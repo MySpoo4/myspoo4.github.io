@@ -10,15 +10,13 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-
     <style>
       .placeholder {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 350px; /* Default height for images and diagrams */
-        /* REMOVED BACKGROUND COLOR: background-color: #e9ecef; */
+        height: 350px;
         font-style: italic;
         border-radius: 0.25rem;
         margin: 15px 0;
@@ -31,11 +29,11 @@
       .placeholder img {
         max-width: 100%;
         max-height: 100%;
-        object-fit: contain; /* Ensures the whole image is visible */
+        object-fit: contain;
       }
       .video-placeholder {
         height: 500px;
-        background-color: transparent !important; /* removed gray */
+        background-color: transparent !important;
         border: none !important;
         margin: 15px 0;
         border-radius: 0.25rem;
@@ -70,6 +68,7 @@
     </header>
 
     <div class="container my-5">
+      <!-- Team Section -->
       <section id="team" class="mb-5">
         <h2 class="pb-3 mb-4 border-bottom text-primary">
           1. Team Presentation 🤝
@@ -90,12 +89,10 @@
                   <b>Role:</b> Scrum Master, Frontend Developer
                 </p>
                 <p class="card-text small">
-                  <b>Sprint 1 Contributions:</b>
-                  <strong>Client (TA) Communication</strong> to clarify
-                  requirements. Developed the
-                  <strong>UI for the Homepage</strong> and established the
-                  design template for all subsequent pages. Managed and
-                  <strong>reviewed/accepted pull requests</strong> on GitHub.
+                  <b>Sprint 1 Contributions:</b> Client (TA) communication to
+                  clarify requirements. Developed the UI for the Homepage and
+                  established the design template for all subsequent pages.
+                  Managed and reviewed/accepted pull requests on GitHub.
                 </p>
               </div>
             </div>
@@ -111,10 +108,9 @@
                   <b>Role:</b> Product Owner, Fullstack Developer
                 </p>
                 <p class="card-text small">
-                  <b>Sprint 1 Contributions:</b> Full implementation (frontend
-                  and backend) of the <strong>Job Posting</strong> feature,
-                  <strong>Job Filtering</strong>, and the
-                  <strong>Job Application</strong> submission process.
+                  <b>Sprint 1 Contributions:</b> Full implementation of the job
+                  posting feature, job filtering, and job application submission
+                  process.
                 </p>
               </div>
             </div>
@@ -128,11 +124,9 @@
               <div class="card-body">
                 <p class="card-text"><b>Role:</b> Fullstack Developer</p>
                 <p class="card-text small">
-                  <b>Sprint 1 Contributions:</b> Full implementation (frontend
-                  and backend) of the
-                  <strong>Recruiter Contact via Email</strong> functionality on
-                  the profile page, and the logic for
-                  <strong>Recruiter Job Postings</strong> management.
+                  <b>Sprint 1 Contributions:</b> Implemented recruiter contact
+                  via email functionality on the profile page and the logic for
+                  recruiter job postings management.
                 </p>
               </div>
             </div>
@@ -146,12 +140,10 @@
               <div class="card-body">
                 <p class="card-text"><b>Role:</b> Backend Developer</p>
                 <p class="card-text small">
-                  <b>Sprint 1 Contributions:</b> Developed the
-                  <strong>User Authentication</strong> system (Login/Signup),
-                  the <strong>Profile System</strong> (including edit
-                  functionality),
-                  <strong>Job Role Editing</strong> functionality, and the
-                  <strong>Admin User Management</strong> feature. Also built
+                  <b>Sprint 1 Contributions:</b> Developed the user
+                  authentication system (Login/Signup), profile system
+                  (including edit functionality), job role editing
+                  functionality, and admin user management feature. Also built
                   this portfolio website.
                 </p>
               </div>
@@ -162,16 +154,16 @@
 
       <hr class="my-5" />
 
+      <!-- System Description -->
       <section id="system" class="mb-5">
         <h2 class="pb-3 mb-4 border-bottom text-primary">
           2. System's Description & Core Features 💻
         </h2>
         <p class="mb-4">
           The web application is a professional job board designed to serve two
-          primary actors: <b>Recruiters</b> (posting jobs) and
-          <b>Seekers</b> (finding and applying to jobs). The focus of Sprint 1
-          was establishing the core user roles and fundamental search
-          capabilities.
+          primary actors: recruiters (posting jobs) and seekers (finding and
+          applying to jobs). Sprint 1 focused on establishing core user roles
+          and fundamental search capabilities.
         </p>
 
         <div class="row">
@@ -179,18 +171,16 @@
             <h4 class="text-secondary">Job Seeking and Filtering</h4>
             <div class="system-feature">
               <p>
-                <strong>Homepage Search:</strong> Unregistered users and Seekers
-                can search jobs by <b>Title, Location, or Type</b> directly on
-                the homepage.
+                <b>Homepage Search:</b> Users can search jobs by title,
+                location, or type directly on the homepage.
               </p>
               <p>
-                <strong>Advanced Filtering:</strong> The "Find Jobs" tab offers
-                extra criteria: <b>Experience Level</b> and <b>Salary Range</b>.
+                <b>Advanced Filtering:</b> The "Find Jobs" tab offers extra
+                criteria such as experience level and salary range.
               </p>
               <p>
-                <strong>Application Flow:</strong> Users can apply by filling
-                out a form when clicking a job listing, and track their history
-                in the top right.
+                <b>Application Flow:</b> Users can apply via a form when
+                clicking a job listing and track their application history.
               </p>
             </div>
           </div>
@@ -198,18 +188,16 @@
             <h4 class="text-secondary">Recruiter and Admin Management</h4>
             <div class="system-feature">
               <p>
-                <strong>Job Posting:</strong> Recruiters use the "Post Job" tab
-                to enter all necessary details (title, company, description,
-                salary, etc.).
+                <b>Job Posting:</b> Recruiters can enter all necessary details
+                for a new job.
               </p>
               <p>
-                <strong>Job Management:</strong> Recruiters can navigate to a
-                specific page to <b>edit or delete</b> their posted jobs.
+                <b>Job Management:</b> Recruiters can edit or delete their
+                posted jobs.
               </p>
               <p>
-                <strong>Admin Oversight:</strong> Administrators can view all
-                job roles and manage both job posts and users via the dedicated
-                Admin page.
+                <b>Admin Oversight:</b> Administrators can manage job roles,
+                posts, and users via the dedicated Admin page.
               </p>
             </div>
           </div>
@@ -218,23 +206,24 @@
         <h4 class="text-secondary mt-4">Profile System</h4>
         <div class="system-feature">
           <p>
-            The <b>Profile Page</b> (top right access) displays critical
-            professional info (role, skills, education, experience, links, bio).
-            Users can <b>edit</b> their profile. Crucially, Recruiters can be
-            <b>contacted via email</b> directly from their profile page.
+            The profile page displays critical professional info such as role,
+            skills, education, experience, links, and bio. Users can edit their
+            profile, and recruiters can be contacted via email directly from
+            their profile page.
           </p>
         </div>
       </section>
 
       <hr class="my-5" />
 
+      <!-- Process Section -->
       <section id="process" class="mb-5">
         <h2 class="pb-3 mb-4 border-bottom text-primary">
           3. Process Description & Design Rationale ⚙️
         </h2>
         <p class="mb-4">
-          Our methodology was guided by Scrum, complemented by specific
-          architectural decisions to ensure system integrity and efficiency.
+          Our methodology followed Scrum, complemented by architectural
+          decisions for system integrity and efficiency.
         </p>
 
         <div class="row">
@@ -242,34 +231,30 @@
             <h4 class="text-secondary">Scrum Implementation (Sprint 1)</h4>
             <ul>
               <li>
-                <strong>Backlog & Planning:</strong> We developed a product
-                backlog of user stories and held an
-                <b>Initial Planning Meeting</b> to select a critical chunk for
-                Sprint 1 (authentication, core profiles, and basic job flow).
+                <b>Backlog & Planning:</b> Developed a product backlog of user
+                stories and held an initial planning meeting to select core
+                features for Sprint 1 (authentication, core profiles, and basic
+                job flow).
               </li>
               <li>
-                <strong>Communication:</strong> We maintained a continuous
-                communication cycle by posting
-                <b>Scrum Standups to Microsoft Teams</b> roughly every 1-2 days,
-                allowing the Scrum Master (Warren) to quickly address any
-                impediments.
+                <b>Communication:</b> Maintained regular updates via Scrum
+                standups on Microsoft Teams to quickly address impediments.
               </li>
               <li>
-                <strong>Review:</strong> The sprint will conclude with a
-                <b>Sprint Review (Demo)</b> with our client (TA) to gather
-                feedback on the deployed features.
+                <b>Review:</b> Sprint concluded with a review/demo with the
+                client (TA) to gather feedback.
               </li>
             </ul>
+
             <h4 class="text-secondary mt-3">
               Design Decision: Technology Choice
             </h4>
             <p>
-              We selected <b>Django</b> for the backend framework. This was a
-              direct decision based on our assumption that the project required
-              the same technology stack as a previous assignment, leveraging
-              existing team familiarity to expedite Sprint 1 delivery.
+              Django was selected for the backend framework based on prior team
+              familiarity, enabling faster Sprint 1 delivery.
             </p>
           </div>
+
           <div class="col-md-6">
             <h4 class="text-secondary">Design Rationale: System Diagrams</h4>
             <p class="small text-muted">
@@ -292,17 +277,15 @@
 
       <hr class="my-5" />
 
+      <!-- Video Demo -->
       <section id="video-demo" class="mb-5">
         <h2 class="pb-3 mb-4 border-bottom text-primary">
           4. Video Demonstration 🎥
         </h2>
         <p class="mb-4">
           This video showcases the successful completion of Sprint 1 goals,
-          including
-          <b
-            >user registration/login, job searching, job posting (Recruiter),
-            and profile editing</b
-          >.
+          including user registration/login, job searching, job posting
+          (recruiter), and profile editing.
         </p>
 
         <iframe style="display: none"> </iframe>
@@ -323,7 +306,7 @@
 
     <footer class="bg-light text-center py-3 mt-5 border-top">
       <p class="text-muted mb-0">
-        Project Sprint 1 Portfolio | Presented by Warren, Karosh, Perry, &
+        Project Sprint 1 Portfolio | Presented by Warren, Krish, Perry, &
         Richard
       </p>
     </footer>
