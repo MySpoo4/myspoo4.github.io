@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Portfolio: LockedIn | Sprint 1 Showcase</title>
+    <title>Project Portfolio: LockedIn | Sprint 2 Showcase</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,14 +17,12 @@
         align-items: center;
         width: 100%;
         height: 350px;
-        font-style: italic;
         border-radius: 0.25rem;
         margin: 15px 0;
         border: 2px dashed #adb5bd;
         font-weight: bold;
         font-size: 1.25rem;
         overflow: hidden;
-        cursor: default;
       }
       .placeholder img {
         max-width: 100%;
@@ -43,56 +41,62 @@
         align-items: center;
       }
       .jumbotron {
-        background: linear-gradient(45deg, #007bff, #0056b3);
+        background: linear-gradient(45deg, #0d6efd, #0043a6);
         color: white;
         padding: 4rem 2rem;
         border-radius: 0;
         margin-bottom: 2rem;
-      }
-      .card-header {
-        background-color: #f8f9fa;
-        border-bottom: 1px solid #dee2e6;
       }
       .system-feature {
         margin-bottom: 1rem;
         border-left: 3px solid #17a2b8;
         padding-left: 10px;
       }
+      .clickable-img {
+        cursor: zoom-in;
+        transition: transform 0.2s ease;
+      }
+      .clickable-img:hover {
+        transform: scale(1.02);
+      }
+      footer {
+        background: #f8f9fa;
+      }
     </style>
   </head>
+
   <body>
     <header class="jumbotron text-center">
       <div class="container">
-        <h1 class="display-4">Sprint 1 Project Portfolio: LockedIn</h1>
+        <h1 class="display-4 fw-bold">Sprint 2 Project Portfolio: LockedIn</h1>
+        <p class="lead">A Smarter, Interactive Job Matching Platform</p>
       </div>
     </header>
 
     <div class="container my-5">
-      <!-- Team Section -->
+      <!-- 1. Team Presentation -->
       <section id="team" class="mb-5">
         <h2 class="pb-3 mb-4 border-bottom text-primary">
           1. Team Presentation 🤝
         </h2>
-        <p class="mb-4">
-          Our four-member team successfully leveraged the Scrum framework to
-          divide responsibilities and deliver core functionalities in Sprint 1.
+        <p>
+          Our team maintained the same Scrum roles from Sprint 1 while expanding
+          technical complexity and communication. Daily standups and weekly TA
+          reviews ensured we stayed aligned and adaptable.
         </p>
 
-        <div class="row row-cols-1 row-cols-md-2 g-4" id="team-members">
+        <div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
           <div class="col">
             <div class="card h-100 shadow-sm border-primary">
               <div class="card-header bg-primary text-white">
-                Warren Yun (Scrum Master / Frontend)
+                Warren Yun — Scrum Master / Fullstack
               </div>
               <div class="card-body">
-                <p class="card-text">
-                  <b>Role:</b> Scrum Master, Frontend Developer
-                </p>
-                <p class="card-text small">
-                  <b>Sprint 1 Contributions:</b> Client (TA) communication to
-                  clarify requirements. Developed the UI for the Homepage and
-                  established the design template for all subsequent pages.
-                  Managed and reviewed/accepted pull requests on GitHub.
+                <p>
+                  <b>Role:</b> Scrum Master & Fullstack Developer<br />
+                  <b>Contributions:</b> Built job recommendation engine, one-click
+                  apply feature, and recruiter candidate search saving. Managed
+                  sprint planning and code merges.
                 </p>
               </div>
             </div>
@@ -101,16 +105,13 @@
           <div class="col">
             <div class="card h-100 shadow-sm border-info">
               <div class="card-header bg-info text-white">
-                Krish Kapoor (Product Owner / Fullstack)
+                Krish Kapoor — Product Owner / Fullstack
               </div>
               <div class="card-body">
-                <p class="card-text">
-                  <b>Role:</b> Product Owner, Fullstack Developer
-                </p>
-                <p class="card-text small">
-                  <b>Sprint 1 Contributions:</b> Full implementation of the job
-                  posting feature, job filtering, and job application submission
-                  process.
+                <p>
+                  <b>Role:</b> Product Owner & Fullstack Developer<br />
+                  <b>Contributions:</b> Prioritized backlog, designed messaging
+                  system, and implemented UI/UX refinements and privacy settings.
                 </p>
               </div>
             </div>
@@ -119,14 +120,13 @@
           <div class="col">
             <div class="card h-100 shadow-sm border-success">
               <div class="card-header bg-success text-white">
-                Perry Zhang (Developer / Fullstack)
+                Perry Zhang — Developer / Fullstack
               </div>
               <div class="card-body">
-                <p class="card-text"><b>Role:</b> Fullstack Developer</p>
-                <p class="card-text small">
-                  <b>Sprint 1 Contributions:</b> Implemented recruiter contact
-                  via email functionality on the profile page and the logic for
-                  recruiter job postings management.
+                <p>
+                  <b>Role:</b> Fullstack Developer<br />
+                  <b>Contributions:</b> Built admin management tools, improved
+                  dashboard, and enforced backend data consistency.
                 </p>
               </div>
             </div>
@@ -135,16 +135,14 @@
           <div class="col">
             <div class="card h-100 shadow-sm border-warning">
               <div class="card-header bg-warning text-dark">
-                Richard Wan (Developer / Backend)
+                Richard Wan — Developer / Backend
               </div>
               <div class="card-body">
-                <p class="card-text"><b>Role:</b> Backend Developer</p>
-                <p class="card-text small">
-                  <b>Sprint 1 Contributions:</b> Developed the user
-                  authentication system (Login/Signup), profile system
-                  (including edit functionality), job role editing
-                  functionality, and admin user management feature. Also built
-                  this portfolio website.
+                <p>
+                  <b>Role:</b> Backend Developer<br />
+                  <b>Contributions:</b> Implemented recruiter Kanban board,
+                  tailored application notes, admin CSV export, and interactive
+                  job map.
                 </p>
               </div>
             </div>
@@ -154,122 +152,89 @@
 
       <hr class="my-5" />
 
-      <!-- System Description -->
+      <!-- 2. System Description -->
       <section id="system" class="mb-5">
         <h2 class="pb-3 mb-4 border-bottom text-primary">
-          2. System's Description & Core Features 💻
+          2. System’s Description & Core Features 💻
         </h2>
-        <p class="mb-4">
-          The web application is a professional job board designed to serve two
-          primary actors: recruiters (posting jobs) and seekers (finding and
-          applying to jobs). Sprint 1 focused on establishing core user roles
-          and fundamental search capabilities.
+        <p>
+          LockedIn evolved from a basic job board into a smart recruitment
+          platform that personalizes job discovery, improves recruiter workflows,
+          and enhances admin visibility.
         </p>
 
-        <div class="row">
+        <div class="row mt-4">
           <div class="col-md-6">
-            <h4 class="text-secondary">Job Seeking and Filtering</h4>
+            <h4 class="text-secondary">For Job Seekers</h4>
             <div class="system-feature">
-              <p>
-                <b>Homepage Search:</b> Users can search jobs by title,
-                location, or type directly on the homepage.
-              </p>
-              <p>
-                <b>Advanced Filtering:</b> The "Find Jobs" tab offers extra
-                criteria such as experience level and salary range.
-              </p>
-              <p>
-                <b>Application Flow:</b> Users can apply via a form when
-                clicking a job listing and track their application history.
-              </p>
+              <p><b>Tailored Applications:</b> One-click apply with a personalized note.</p>
+              <p><b>AI Recommendations:</b> Suggested jobs based on skills & interests.</p>
+              <p><b>Interactive Map:</b> Visualize job listings by location.</p>
+              <p><b>Commute Filtering:</b> Filter by commute radius.</p>
+              <p><b>Privacy Controls:</b> Manage profile visibility.</p>
             </div>
           </div>
-          <div class="col-md-6">
-            <h4 class="text-secondary">Recruiter and Admin Management</h4>
-            <div class="system-feature">
-              <p>
-                <b>Job Posting:</b> Recruiters can enter all necessary details
-                for a new job.
-              </p>
-              <p>
-                <b>Job Management:</b> Recruiters can edit or delete their
-                posted jobs.
-              </p>
-              <p>
-                <b>Admin Oversight:</b> Administrators can manage job roles,
-                posts, and users via the dedicated Admin page.
-              </p>
-            </div>
-          </div>
-        </div>
 
-        <h4 class="text-secondary mt-4">Profile System</h4>
-        <div class="system-feature">
-          <p>
-            The profile page displays critical professional info such as role,
-            skills, education, experience, links, and bio. Users can edit their
-            profile, and recruiters can be contacted via email directly from
-            their profile page.
-          </p>
+          <div class="col-md-6">
+            <h4 class="text-secondary">For Recruiters & Admins</h4>
+            <div class="system-feature">
+              <p><b>Recruiter Dashboard:</b> Kanban-style applicant management.</p>
+              <p><b>Messaging:</b> Direct communication with candidates.</p>
+              <p><b>Saved Searches:</b> Save candidate filters with notifications.</p>
+              <p><b>Admin Tools:</b> Manage roles, users, and data exports.</p>
+              <p><b>CSV Export:</b> Download user & job analytics.</p>
+            </div>
+          </div>
         </div>
       </section>
 
       <hr class="my-5" />
 
-      <!-- Process Section -->
+      <!-- 3. Process & Design -->
       <section id="process" class="mb-5">
         <h2 class="pb-3 mb-4 border-bottom text-primary">
           3. Process Description & Design Rationale ⚙️
         </h2>
-        <p class="mb-4">
-          Our methodology followed Scrum, complemented by architectural
-          decisions for system integrity and efficiency.
-        </p>
 
         <div class="row">
           <div class="col-md-6">
-            <h4 class="text-secondary">Scrum Implementation (Sprint 1)</h4>
+            <h4 class="text-secondary">Scrum Implementation</h4>
             <ul>
-              <li>
-                <b>Backlog & Planning:</b> Developed a product backlog of user
-                stories and held an initial planning meeting to select core
-                features for Sprint 1 (authentication, core profiles, and basic
-                job flow).
-              </li>
-              <li>
-                <b>Communication:</b> Maintained regular updates via Scrum
-                standups on Microsoft Teams to quickly address impediments.
-              </li>
-              <li>
-                <b>Review:</b> Sprint concluded with a review/demo with the
-                client (TA) to gather feedback.
-              </li>
+              <li><b>Planning:</b> Defined sprint backlog with user stories and acceptance criteria.</li>
+              <li><b>Daily Standups:</b> Used Teams for quick progress and blocker updates.</li>
+              <li><b>TA Reviews:</b> Weekly feedback integrated into Sprint 2 deliverables.</li>
+              <li><b>Retrospective:</b> Focused on improving front–back integration.</li>
             </ul>
 
-            <h4 class="text-secondary mt-3">
-              Design Decision: Technology Choice
-            </h4>
+            <h4 class="text-secondary mt-3">Design Decisions</h4>
             <p>
-              Django was selected for the backend framework based on prior team
-              familiarity, enabling faster Sprint 1 delivery.
+              Django was selected for the backend for reliability and scalability,
+              while Bootstrap and JavaScript enabled responsive and dynamic UI
+              behavior (map interactivity, Kanban drag-and-drop, etc.).
             </p>
           </div>
 
           <div class="col-md-6">
-            <h4 class="text-secondary">Design Rationale: System Diagrams</h4>
-            <p class="small text-muted">
-              The following diagrams illustrate the structural and functional
-              requirements achieved in Sprint 1.
+            <h4 class="text-secondary">Architecture & Diagrams</h4>
+            <p>
+              LockedIn follows an MVC-inspired Django structure. The frontend
+              communicates with the backend via REST APIs to update data in real time.
             </p>
 
-            <h5 class="mt-3">Use Case Diagram (Functional Requirements)</h5>
             <div class="placeholder">
-              <img src="use-case.png" alt="Use Case Diagram" />
+              <img
+                src="use-case.png"
+                alt="Use Case Diagram"
+                class="clickable-img"
+              />
             </div>
 
-            <h5 class="mt-3">Class Diagram (Structure)</h5>
             <div class="placeholder">
-              <img src="class.png" alt="Class Diagram" />
+              <img
+                src="class.png"
+                alt="Class Diagram"
+                class="clickable-img"
+              />
             </div>
           </div>
         </div>
@@ -277,44 +242,70 @@
 
       <hr class="my-5" />
 
-      <!-- Video Demo -->
+      <!-- 4. Video Demo -->
       <section id="video-demo" class="mb-5">
         <h2 class="pb-3 mb-4 border-bottom text-primary">
           4. Video Demonstration 🎥
         </h2>
-        <p class="mb-4">
-          This video showcases the successful completion of Sprint 1 goals,
-          including user registration/login, job searching, job posting
-          (recruiter), and profile editing.
+        <p>
+          Below is our Sprint 2 demo showcasing new features such as personalized
+          applications, recruiter pipelines, and interactive job maps.
         </p>
 
-        <iframe style="display: none"> </iframe>
-        <div class="video-placeholder p-0">
+        <div class="video-placeholder">
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/gLvwe-sy5zo"
-            title="YouTube video player"
+            src="https://www.youtube.com/embed/REPLACE_WITH_SPRINT2_VIDEO"
+            title="Sprint 2 Demo Video"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-          >
-          </iframe>
+          ></iframe>
         </div>
       </section>
     </div>
 
-    <footer class="bg-light text-center py-3 mt-5 border-top">
+    <footer class="text-center py-3 mt-5 border-top">
       <p class="text-muted mb-0">
-        Project Sprint 1 Portfolio | Presented by Warren, Krish, Perry, &
-        Richard
+        Project Sprint 2 Portfolio | Presented by Warren, Krish, Perry, &
+        Richard — 2025
       </p>
     </footer>
 
+    <!-- Image Zoom Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-transparent border-0">
+          <img
+            id="modalImage"
+            src=""
+            class="img-fluid rounded shadow"
+            alt="Zoomed image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      // Zoom modal functionality
+      document.querySelectorAll(".clickable-img").forEach((img) => {
+        img.addEventListener("click", () => {
+          const modalImg = document.getElementById("modalImage");
+          modalImg.src = img.src;
+          const modal = new bootstrap.Modal(
+            document.getElementById("imageModal")
+          );
+          modal.show();
+        });
+      });
+    </script>
   </body>
 </html>
