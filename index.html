@@ -94,9 +94,9 @@
               <div class="card-body">
                 <p>
                   <b>Role:</b> Scrum Master & Fullstack Developer<br />
-                  <b>Contributions:</b> Built job recommendation engine, one-click
-                  apply feature, and recruiter candidate search saving. Managed
-                  sprint planning and code merges.
+                  <b>Contributions:</b> Built job recommendation engine,
+                  one-click apply feature, and recruiter candidate search
+                  saving. Managed sprint planning and code merges.
                 </p>
               </div>
             </div>
@@ -111,7 +111,8 @@
                 <p>
                   <b>Role:</b> Product Owner & Fullstack Developer<br />
                   <b>Contributions:</b> Prioritized backlog, designed messaging
-                  system, and implemented UI/UX refinements and privacy settings.
+                  system, and implemented UI/UX refinements and privacy
+                  settings.
                 </p>
               </div>
             </div>
@@ -159,16 +160,22 @@
         </h2>
         <p>
           LockedIn evolved from a basic job board into a smart recruitment
-          platform that personalizes job discovery, improves recruiter workflows,
-          and enhances admin visibility.
+          platform that personalizes job discovery, improves recruiter
+          workflows, and enhances admin visibility.
         </p>
 
         <div class="row mt-4">
           <div class="col-md-6">
             <h4 class="text-secondary">For Job Seekers</h4>
             <div class="system-feature">
-              <p><b>Tailored Applications:</b> One-click apply with a personalized note.</p>
-              <p><b>AI Recommendations:</b> Suggested jobs based on skills & interests.</p>
+              <p>
+                <b>Tailored Applications:</b> One-click apply with a
+                personalized note.
+              </p>
+              <p>
+                <b>AI Recommendations:</b> Suggested jobs based on skills &
+                interests.
+              </p>
               <p><b>Interactive Map:</b> Visualize job listings by location.</p>
               <p><b>Commute Filtering:</b> Filter by commute radius.</p>
               <p><b>Privacy Controls:</b> Manage profile visibility.</p>
@@ -178,9 +185,14 @@
           <div class="col-md-6">
             <h4 class="text-secondary">For Recruiters & Admins</h4>
             <div class="system-feature">
-              <p><b>Recruiter Dashboard:</b> Kanban-style applicant management.</p>
+              <p>
+                <b>Recruiter Dashboard:</b> Kanban-style applicant management.
+              </p>
               <p><b>Messaging:</b> Direct communication with candidates.</p>
-              <p><b>Saved Searches:</b> Save candidate filters with notifications.</p>
+              <p>
+                <b>Saved Searches:</b> Save candidate filters with
+                notifications.
+              </p>
               <p><b>Admin Tools:</b> Manage roles, users, and data exports.</p>
               <p><b>CSV Export:</b> Download user & job analytics.</p>
             </div>
@@ -200,17 +212,30 @@
           <div class="col-md-6">
             <h4 class="text-secondary">Scrum Implementation</h4>
             <ul>
-              <li><b>Planning:</b> Defined sprint backlog with user stories and acceptance criteria.</li>
-              <li><b>Daily Standups:</b> Used Teams for quick progress and blocker updates.</li>
-              <li><b>TA Reviews:</b> Weekly feedback integrated into Sprint 2 deliverables.</li>
-              <li><b>Retrospective:</b> Focused on improving front–back integration.</li>
+              <li>
+                <b>Planning:</b> Defined sprint backlog with user stories and
+                acceptance criteria.
+              </li>
+              <li>
+                <b>Daily Standups:</b> Used Teams for quick progress and blocker
+                updates.
+              </li>
+              <li>
+                <b>TA Reviews:</b> Weekly feedback integrated into Sprint 2
+                deliverables.
+              </li>
+              <li>
+                <b>Retrospective:</b> Focused on improving front–back
+                integration.
+              </li>
             </ul>
 
             <h4 class="text-secondary mt-3">Design Decisions</h4>
             <p>
-              Django was selected for the backend for reliability and scalability,
-              while Bootstrap and JavaScript enabled responsive and dynamic UI
-              behavior (map interactivity, Kanban drag-and-drop, etc.).
+              Django was selected for the backend for reliability and
+              scalability, while Bootstrap and JavaScript enabled responsive and
+              dynamic UI behavior (map interactivity, Kanban drag-and-drop,
+              etc.).
             </p>
           </div>
 
@@ -218,7 +243,8 @@
             <h4 class="text-secondary">Architecture & Diagrams</h4>
             <p>
               LockedIn follows an MVC-inspired Django structure. The frontend
-              communicates with the backend via REST APIs to update data in real time.
+              communicates with the backend via REST APIs to update data in real
+              time.
             </p>
 
             <div class="placeholder">
@@ -230,11 +256,7 @@
             </div>
 
             <div class="placeholder">
-              <img
-                src="class.png"
-                alt="Class Diagram"
-                class="clickable-img"
-              />
+              <img src="class.png" alt="Class Diagram" class="clickable-img" />
             </div>
           </div>
         </div>
@@ -248,15 +270,16 @@
           4. Video Demonstration 🎥
         </h2>
         <p>
-          Below is our Sprint 2 demo showcasing new features such as personalized
-          applications, recruiter pipelines, and interactive job maps.
+          Below is our Sprint 2 demo showcasing new features such as
+          personalized applications, recruiter pipelines, and interactive job
+          maps.
         </p>
 
         <div class="video-placeholder">
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/REPLACE_WITH_SPRINT2_VIDEO"
+            src="https://www.youtube.com/embed/LYrWLdms-BU?si=KkzIEK4Q1PPdTCAJ"
             title="Sprint 2 Demo Video"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -301,7 +324,7 @@
           const modalImg = document.getElementById("modalImage");
           modalImg.src = img.src;
           const modal = new bootstrap.Modal(
-            document.getElementById("imageModal")
+            document.getElementById("imageModal"),
           );
           modal.show();
         });
